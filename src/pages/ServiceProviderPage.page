@@ -1,0 +1,32 @@
+<apex:page showHeader="false">
+    
+    <script type="text/javascript" src="https://atchutaiamd-dev-ed.my.salesforce.com/canvas/sdk/js/42.0/canvas-all.js" />
+        <script type="text/javascript">
+    function refreshSR() {
+     Sfdc.canvas.client.refreshSignedRequest(function(data) {
+      if (data.status === 200) {
+       var signedRequest = data.payload.response; 
+        var part = signedRequest.split('.')[1]; 
+        var obj = JSON.parse(Sfdc.canvas.decode(part));
+        updateDisplay(obj); 
+        }
+        }); 
+        }
+        function updateDisplay(obj) {
+        var oauth = document.getElementById('oauth');
+        oauth.innerHTML = obj.client.oauthToken;
+        var user = document.getElementById('user');
+         user.innerHTML = obj.context.user.fullName;
+         var org = document.getElementById('org');
+          org.innerHTML = obj.context.organization.name; 
+          } 
+          </script>
+           <p/>  Service Provider User: {!$User.FirstName} {!$User.LastName}<br/> 
+           Service Provider Org: {!$Organization.Name}<br/> 
+           <p/> 
+           Identity Provider User: <span id="user"></span><br/> 
+           Identity Provider Org: <span id="org"></span><br/>
+            Identity Provider OAuth Token: <span id="oauth"></span><br/>
+             <p/>
+              <input id="refresh" type="button" value="Refresh SR" onclick="refreshSR();"/> 
+               </apex:page>

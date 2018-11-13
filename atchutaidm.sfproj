@@ -1,0 +1,1312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{777338bb-8cc5-4ec2-9c0a-ec23a2436f0f}</ProjectGuid>
+    <ApexVersion>42.0</ApexVersion>
+    <Name>atchutaidm</Name>
+    <AssemblyName>atchutaidm</AssemblyName>
+    <RootNamespace>atchutaidm</RootNamespace>
+    <ProjectVersion>6</ProjectVersion>
+    <PackageVersion>1.23.1.4</PackageVersion>
+    <SyncOption>True</SyncOption>
+    <AntSupport>True</AntSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Folder Include="AnonymousApex" />
+    <Folder Include="aura\" />
+    <Folder Include="aura\forgotPassword\" />
+    <Folder Include="aura\loginForm\" />
+    <Folder Include="aura\selfRegister\" />
+    <Folder Include="aura\setExpId\" />
+    <Folder Include="aura\setStartUrl\" />
+    <Folder Include="classes\" />
+    <Folder Include="components\" />
+    <Folder Include="customMetadata\" />
+    <Folder Include="objects\" />
+    <Folder Include="pages\" />
+    <Folder Include="Soql" />
+    <Folder Include="staticresources\" />
+    <Folder Include="staticresources\SiteSamples\" />
+    <Folder Include="staticresources\SiteSamples\img\" />
+    <Folder Include="staticresources\TWS_Sync_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aura\forgotPassword\forgotPassword.cmp">
+      <PhysicalRelativePath>src\aura\forgotPassword\forgotPassword.cmp</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>forgotPassword</BundleName>
+      <LightningType>Component</LightningType>
+    </Compile>
+    <Compile Include="aura\forgotPassword\forgotPassword.css">
+      <PhysicalRelativePath>src\aura\forgotPassword\forgotPassword.css</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>forgotPassword</BundleName>
+      <LightningType>Style</LightningType>
+    </Compile>
+    <Compile Include="aura\forgotPassword\forgotPassword.design">
+      <PhysicalRelativePath>src\aura\forgotPassword\forgotPassword.design</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>forgotPassword</BundleName>
+      <LightningType>Design</LightningType>
+    </Compile>
+    <Compile Include="aura\forgotPassword\forgotPasswordController.js">
+      <PhysicalRelativePath>src\aura\forgotPassword\forgotPasswordController.js</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>forgotPassword</BundleName>
+      <LightningType>Controller</LightningType>
+    </Compile>
+    <Compile Include="aura\forgotPassword\forgotPasswordHelper.js">
+      <PhysicalRelativePath>src\aura\forgotPassword\forgotPasswordHelper.js</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>forgotPassword</BundleName>
+      <LightningType>Helper</LightningType>
+    </Compile>
+    <Compile Include="aura\loginForm\loginForm.cmp">
+      <PhysicalRelativePath>src\aura\loginForm\loginForm.cmp</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>loginForm</BundleName>
+      <LightningType>Component</LightningType>
+    </Compile>
+    <Compile Include="aura\loginForm\loginForm.css">
+      <PhysicalRelativePath>src\aura\loginForm\loginForm.css</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>loginForm</BundleName>
+      <LightningType>Style</LightningType>
+    </Compile>
+    <Compile Include="aura\loginForm\loginForm.design">
+      <PhysicalRelativePath>src\aura\loginForm\loginForm.design</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>loginForm</BundleName>
+      <LightningType>Design</LightningType>
+    </Compile>
+    <Compile Include="aura\loginForm\loginFormController.js">
+      <PhysicalRelativePath>src\aura\loginForm\loginFormController.js</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>loginForm</BundleName>
+      <LightningType>Controller</LightningType>
+    </Compile>
+    <Compile Include="aura\loginForm\loginFormHelper.js">
+      <PhysicalRelativePath>src\aura\loginForm\loginFormHelper.js</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>loginForm</BundleName>
+      <LightningType>Helper</LightningType>
+    </Compile>
+    <Compile Include="aura\selfRegister\selfRegister.cmp">
+      <PhysicalRelativePath>src\aura\selfRegister\selfRegister.cmp</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>selfRegister</BundleName>
+      <LightningType>Component</LightningType>
+    </Compile>
+    <Compile Include="aura\selfRegister\selfRegister.css">
+      <PhysicalRelativePath>src\aura\selfRegister\selfRegister.css</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>selfRegister</BundleName>
+      <LightningType>Style</LightningType>
+    </Compile>
+    <Compile Include="aura\selfRegister\selfRegister.design">
+      <PhysicalRelativePath>src\aura\selfRegister\selfRegister.design</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>selfRegister</BundleName>
+      <LightningType>Design</LightningType>
+    </Compile>
+    <Compile Include="aura\selfRegister\selfRegisterController.js">
+      <PhysicalRelativePath>src\aura\selfRegister\selfRegisterController.js</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>selfRegister</BundleName>
+      <LightningType>Controller</LightningType>
+    </Compile>
+    <Compile Include="aura\selfRegister\selfRegisterHelper.js">
+      <PhysicalRelativePath>src\aura\selfRegister\selfRegisterHelper.js</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>selfRegister</BundleName>
+      <LightningType>Helper</LightningType>
+    </Compile>
+    <Compile Include="aura\setExpId\setExpId.evt">
+      <PhysicalRelativePath>src\aura\setExpId\setExpId.evt</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>setExpId</BundleName>
+      <LightningType>Event</LightningType>
+    </Compile>
+    <Compile Include="aura\setStartUrl\setStartUrl.evt">
+      <PhysicalRelativePath>src\aura\setStartUrl\setStartUrl.evt</PhysicalRelativePath>
+      <SubType>AuraDefinitionBundle</SubType>
+      <BundleName>setStartUrl</BundleName>
+      <LightningType>Event</LightningType>
+    </Compile>
+    <Compile Include="classes\AutocreatedRegHandler1520454428839.cls">
+      <PhysicalRelativePath>src\classes\AutocreatedRegHandler1520454428839.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\ChangePasswordController.cls">
+      <PhysicalRelativePath>src\classes\ChangePasswordController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\ChangePasswordControllerTest.cls">
+      <PhysicalRelativePath>src\classes\ChangePasswordControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\CommunitiesLandingController.cls">
+      <PhysicalRelativePath>src\classes\CommunitiesLandingController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\CommunitiesLandingControllerTest.cls">
+      <PhysicalRelativePath>src\classes\CommunitiesLandingControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\CommunitiesLoginController.cls">
+      <PhysicalRelativePath>src\classes\CommunitiesLoginController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\CommunitiesLoginControllerTest.cls">
+      <PhysicalRelativePath>src\classes\CommunitiesLoginControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\CommunitiesSelfRegConfirmController.cls">
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegConfirmController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\CommunitiesSelfRegConfirmControllerTest.cls">
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegConfirmControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\CommunitiesSelfRegController.cls">
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\CommunitiesSelfRegControllerTest.cls">
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\DeploymentTest.cls">
+      <PhysicalRelativePath>src\classes\DeploymentTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\DeployMetadata.cls">
+      <PhysicalRelativePath>src\classes\DeployMetadata.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\ForgotPasswordController.cls">
+      <PhysicalRelativePath>src\classes\ForgotPasswordController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\ForgotPasswordControllerTest.cls">
+      <PhysicalRelativePath>src\classes\ForgotPasswordControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\LightningForgotPasswordController.cls">
+      <PhysicalRelativePath>src\classes\LightningForgotPasswordController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\LightningForgotPasswordControllerTest.cls">
+      <PhysicalRelativePath>src\classes\LightningForgotPasswordControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\LightningLoginFormController.cls">
+      <PhysicalRelativePath>src\classes\LightningLoginFormController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\LightningLoginFormControllerTest.cls">
+      <PhysicalRelativePath>src\classes\LightningLoginFormControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\LightningSelfRegisterController.cls">
+      <PhysicalRelativePath>src\classes\LightningSelfRegisterController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\LightningSelfRegisterControllerTest.cls">
+      <PhysicalRelativePath>src\classes\LightningSelfRegisterControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\MetadataExample.cls">
+      <PhysicalRelativePath>src\classes\MetadataExample.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\Module3RegistrationHandler.cls">
+      <PhysicalRelativePath>src\classes\Module3RegistrationHandler.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\MyDeploymentCallbackTest.cls">
+      <PhysicalRelativePath>src\classes\MyDeploymentCallbackTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\MyProfilePageController.cls">
+      <PhysicalRelativePath>src\classes\MyProfilePageController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\MyProfilePageControllerTest.cls">
+      <PhysicalRelativePath>src\classes\MyProfilePageControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\PostInstallCallback.cls">
+      <PhysicalRelativePath>src\classes\PostInstallCallback.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\PostInstallScript.cls">
+      <PhysicalRelativePath>src\classes\PostInstallScript.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\salesAggregate.cls">
+      <PhysicalRelativePath>src\classes\salesAggregate.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\SampleSamlJITHandler.cls">
+      <PhysicalRelativePath>src\classes\SampleSamlJITHandler.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\SimpleFacebookRegistrationHandler.cls">
+      <PhysicalRelativePath>src\classes\SimpleFacebookRegistrationHandler.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\SiteLoginController.cls">
+      <PhysicalRelativePath>src\classes\SiteLoginController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\SiteLoginControllerTest.cls">
+      <PhysicalRelativePath>src\classes\SiteLoginControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\SiteRegisterController.cls">
+      <PhysicalRelativePath>src\classes\SiteRegisterController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\SiteRegisterControllerTest.cls">
+      <PhysicalRelativePath>src\classes\SiteRegisterControllerTest.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\UpdateContactPageLayout.cls">
+      <PhysicalRelativePath>src\classes\UpdateContactPageLayout.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\UpdatePageLayout.cls">
+      <PhysicalRelativePath>src\classes\UpdatePageLayout.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="classes\VATController.cls">
+      <PhysicalRelativePath>src\classes\VATController.cls</PhysicalRelativePath>
+      <SubType>Class</SubType>
+    </Compile>
+    <Compile Include="components\SiteFooter.component">
+      <PhysicalRelativePath>src\components\SiteFooter.component</PhysicalRelativePath>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="components\SiteHeader.component">
+      <PhysicalRelativePath>src\components\SiteHeader.component</PhysicalRelativePath>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="components\SiteLogin.component">
+      <PhysicalRelativePath>src\components\SiteLogin.component</PhysicalRelativePath>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="components\SitePoweredBy.component">
+      <PhysicalRelativePath>src\components\SitePoweredBy.component</PhysicalRelativePath>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="pages\AnswersHome.page">
+      <PhysicalRelativePath>src\pages\AnswersHome.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\BandwidthExceeded.page">
+      <PhysicalRelativePath>src\pages\BandwidthExceeded.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\ChangePassword.page">
+      <PhysicalRelativePath>src\pages\ChangePassword.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\CommunitiesLanding.page">
+      <PhysicalRelativePath>src\pages\CommunitiesLanding.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\CommunitiesLogin.page">
+      <PhysicalRelativePath>src\pages\CommunitiesLogin.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\CommunitiesSelfReg.page">
+      <PhysicalRelativePath>src\pages\CommunitiesSelfReg.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\CommunitiesSelfRegConfirm.page">
+      <PhysicalRelativePath>src\pages\CommunitiesSelfRegConfirm.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\CommunitiesTemplate.page">
+      <PhysicalRelativePath>src\pages\CommunitiesTemplate.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\Exception.page">
+      <PhysicalRelativePath>src\pages\Exception.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\FileNotFound.page">
+      <PhysicalRelativePath>src\pages\FileNotFound.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\ForgotPassword.page">
+      <PhysicalRelativePath>src\pages\ForgotPassword.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\ForgotPasswordConfirm.page">
+      <PhysicalRelativePath>src\pages\ForgotPasswordConfirm.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\IdeasHome.page">
+      <PhysicalRelativePath>src\pages\IdeasHome.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\InMaintenance.page">
+      <PhysicalRelativePath>src\pages\InMaintenance.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\MyProfilePage.page">
+      <PhysicalRelativePath>src\pages\MyProfilePage.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\salesAggregatevfpage.page">
+      <PhysicalRelativePath>src\pages\salesAggregatevfpage.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\ServiceProviderPage.page">
+      <PhysicalRelativePath>src\pages\ServiceProviderPage.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\SiteLogin.page">
+      <PhysicalRelativePath>src\pages\SiteLogin.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\SiteRegister.page">
+      <PhysicalRelativePath>src\pages\SiteRegister.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\SiteRegisterConfirm.page">
+      <PhysicalRelativePath>src\pages\SiteRegisterConfirm.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\SiteTemplate.page">
+      <PhysicalRelativePath>src\pages\SiteTemplate.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\StdExceptionTemplate.page">
+      <PhysicalRelativePath>src\pages\StdExceptionTemplate.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\Unauthorized.page">
+      <PhysicalRelativePath>src\pages\Unauthorized.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\UnderConstruction.page">
+      <PhysicalRelativePath>src\pages\UnderConstruction.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+    <Compile Include="pages\VATRateForm.page">
+      <PhysicalRelativePath>src\pages\VATRateForm.page</PhysicalRelativePath>
+      <SubType>Page</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="customMetadata\Accessories_to_SFA_Field_Mappings.VacationPackage_Account.md">
+      <PhysicalRelativePath>src\customMetadata\Accessories_to_SFA_Field_Mappings.VacationPackage_Account.md</PhysicalRelativePath>
+      <SubType>CustomMetadata</SubType>
+    </Object>
+    <Object Include="customMetadata\Threat_Tier_Mappings.Easy_Vacations.md">
+      <PhysicalRelativePath>src\customMetadata\Threat_Tier_Mappings.Easy_Vacations.md</PhysicalRelativePath>
+      <SubType>CustomMetadata</SubType>
+    </Object>
+    <Object Include="customMetadata\Threat_Tier_Mappings.Hard_Vacations.md">
+      <PhysicalRelativePath>src\customMetadata\Threat_Tier_Mappings.Hard_Vacations.md</PhysicalRelativePath>
+      <SubType>CustomMetadata</SubType>
+    </Object>
+    <Object Include="customMetadata\VAT_Data.Germany.md">
+      <PhysicalRelativePath>src\customMetadata\VAT_Data.Germany.md</PhysicalRelativePath>
+      <SubType>CustomMetadata</SubType>
+    </Object>
+    <Object Include="customMetadata\VAT_Data.Japan.md">
+      <PhysicalRelativePath>src\customMetadata\VAT_Data.Japan.md</PhysicalRelativePath>
+      <SubType>CustomMetadata</SubType>
+    </Object>
+    <Object Include="customMetadata\VAT_Rate.IT.md">
+      <PhysicalRelativePath>src\customMetadata\VAT_Rate.IT.md</PhysicalRelativePath>
+      <SubType>CustomMetadata</SubType>
+    </Object>
+    <Object Include="customMetadata\VAT_Rate.Japan.md">
+      <PhysicalRelativePath>src\customMetadata\VAT_Rate.Japan.md</PhysicalRelativePath>
+      <SubType>CustomMetadata</SubType>
+    </Object>
+    <Object Include="customMetadata\VAT_Rate.RO.md">
+      <PhysicalRelativePath>src\customMetadata\VAT_Rate.RO.md</PhysicalRelativePath>
+      <SubType>CustomMetadata</SubType>
+    </Object>
+    <Object Include="customMetadata\VAT_Rate.SE.md">
+      <PhysicalRelativePath>src\customMetadata\VAT_Rate.SE.md</PhysicalRelativePath>
+      <SubType>CustomMetadata</SubType>
+    </Object>
+    <Object Include="customMetadata\VAT_Rate.UK.md">
+      <PhysicalRelativePath>src\customMetadata\VAT_Rate.UK.md</PhysicalRelativePath>
+      <SubType>CustomMetadata</SubType>
+    </Object>
+    <Object Include="customMetadata\VAT_Rate.US.md">
+      <PhysicalRelativePath>src\customMetadata\VAT_Rate.US.md</PhysicalRelativePath>
+      <SubType>CustomMetadata</SubType>
+    </Object>
+    <Object Include="objects\Accessories_to_SFA_Field_Mappings__mdt.object">
+      <PhysicalRelativePath>src\objects\Accessories_to_SFA_Field_Mappings__mdt.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Account.object">
+      <PhysicalRelativePath>src\objects\Account.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AccountBrand.object">
+      <PhysicalRelativePath>src\objects\AccountBrand.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AccountCleanInfo.object">
+      <PhysicalRelativePath>src\objects\AccountCleanInfo.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AccountContactRole.object">
+      <PhysicalRelativePath>src\objects\AccountContactRole.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Activity.object">
+      <PhysicalRelativePath>src\objects\Activity.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Agency_Service_Providers__mdt.object">
+      <PhysicalRelativePath>src\objects\Agency_Service_Providers__mdt.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Asset.object">
+      <PhysicalRelativePath>src\objects\Asset.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AssetRelationship.object">
+      <PhysicalRelativePath>src\objects\AssetRelationship.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\AssistantProgress.object">
+      <PhysicalRelativePath>src\objects\AssistantProgress.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Booking_object__c.object">
+      <PhysicalRelativePath>src\objects\Booking_object__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Bot_Command__c.object">
+      <PhysicalRelativePath>src\objects\Bot_Command__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Broker__c.object">
+      <PhysicalRelativePath>src\objects\Broker__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Campaign.object">
+      <PhysicalRelativePath>src\objects\Campaign.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CampaignMember.object">
+      <PhysicalRelativePath>src\objects\CampaignMember.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Case.object">
+      <PhysicalRelativePath>src\objects\Case.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CaseContactRole.object">
+      <PhysicalRelativePath>src\objects\CaseContactRole.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ChannelProgram.object">
+      <PhysicalRelativePath>src\objects\ChannelProgram.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ChannelProgramLevel.object">
+      <PhysicalRelativePath>src\objects\ChannelProgramLevel.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ChannelProgramMember.object">
+      <PhysicalRelativePath>src\objects\ChannelProgramMember.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ChatterActivity.object">
+      <PhysicalRelativePath>src\objects\ChatterActivity.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CollaborationGroup.object">
+      <PhysicalRelativePath>src\objects\CollaborationGroup.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\CollaborationGroupMember.object">
+      <PhysicalRelativePath>src\objects\CollaborationGroupMember.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Contact.object">
+      <PhysicalRelativePath>src\objects\Contact.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ContactCleanInfo.object">
+      <PhysicalRelativePath>src\objects\ContactCleanInfo.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ContentVersion.object">
+      <PhysicalRelativePath>src\objects\ContentVersion.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Contract.object">
+      <PhysicalRelativePath>src\objects\Contract.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ContractContactRole.object">
+      <PhysicalRelativePath>src\objects\ContractContactRole.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\DandBCompany.object">
+      <PhysicalRelativePath>src\objects\DandBCompany.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Dreamhouse_Settings__c.object">
+      <PhysicalRelativePath>src\objects\Dreamhouse_Settings__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\DuplicateRecordItem.object">
+      <PhysicalRelativePath>src\objects\DuplicateRecordItem.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\DuplicateRecordSet.object">
+      <PhysicalRelativePath>src\objects\DuplicateRecordSet.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\EmailMessage.object">
+      <PhysicalRelativePath>src\objects\EmailMessage.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Event.object">
+      <PhysicalRelativePath>src\objects\Event.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ExchangeUserMapping.object">
+      <PhysicalRelativePath>src\objects\ExchangeUserMapping.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\FeedItem.object">
+      <PhysicalRelativePath>src\objects\FeedItem.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ForecastingCategoryMapping.object">
+      <PhysicalRelativePath>src\objects\ForecastingCategoryMapping.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Idea.object">
+      <PhysicalRelativePath>src\objects\Idea.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Lead.object">
+      <PhysicalRelativePath>src\objects\Lead.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\LeadCleanInfo.object">
+      <PhysicalRelativePath>src\objects\LeadCleanInfo.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Macro.object">
+      <PhysicalRelativePath>src\objects\Macro.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\MacroAction.object">
+      <PhysicalRelativePath>src\objects\MacroAction.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\MacroInstruction.object">
+      <PhysicalRelativePath>src\objects\MacroInstruction.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\NetworkMember.object">
+      <PhysicalRelativePath>src\objects\NetworkMember.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Opportunity.object">
+      <PhysicalRelativePath>src\objects\Opportunity.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\OpportunityCompetitor.object">
+      <PhysicalRelativePath>src\objects\OpportunityCompetitor.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\OpportunityContactRole.object">
+      <PhysicalRelativePath>src\objects\OpportunityContactRole.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\OpportunityLineItem.object">
+      <PhysicalRelativePath>src\objects\OpportunityLineItem.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Order.object">
+      <PhysicalRelativePath>src\objects\Order.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\OrderItem.object">
+      <PhysicalRelativePath>src\objects\OrderItem.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\OrgDeleteRequest.object">
+      <PhysicalRelativePath>src\objects\OrgDeleteRequest.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\PartnerFundAllocation.object">
+      <PhysicalRelativePath>src\objects\PartnerFundAllocation.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\PartnerFundClaim.object">
+      <PhysicalRelativePath>src\objects\PartnerFundClaim.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\PartnerFundRequest.object">
+      <PhysicalRelativePath>src\objects\PartnerFundRequest.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\PartnerMarketingBudget.object">
+      <PhysicalRelativePath>src\objects\PartnerMarketingBudget.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\PartnerRole.object">
+      <PhysicalRelativePath>src\objects\PartnerRole.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Pricebook2.object">
+      <PhysicalRelativePath>src\objects\Pricebook2.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\PricebookEntry.object">
+      <PhysicalRelativePath>src\objects\PricebookEntry.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Product2.object">
+      <PhysicalRelativePath>src\objects\Product2.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Property_Favorite__c.object">
+      <PhysicalRelativePath>src\objects\Property_Favorite__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Property__c.object">
+      <PhysicalRelativePath>src\objects\Property__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\QuickText.object">
+      <PhysicalRelativePath>src\objects\QuickText.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\RecordAction.object">
+      <PhysicalRelativePath>src\objects\RecordAction.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Scorecard.object">
+      <PhysicalRelativePath>src\objects\Scorecard.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ScorecardAssociation.object">
+      <PhysicalRelativePath>src\objects\ScorecardAssociation.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\ScorecardMetric.object">
+      <PhysicalRelativePath>src\objects\ScorecardMetric.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Site.object">
+      <PhysicalRelativePath>src\objects\Site.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\SocialPersona.object">
+      <PhysicalRelativePath>src\objects\SocialPersona.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Solution.object">
+      <PhysicalRelativePath>src\objects\Solution.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\StreamingChannel.object">
+      <PhysicalRelativePath>src\objects\StreamingChannel.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Task.object">
+      <PhysicalRelativePath>src\objects\Task.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Threat_Tier_Mappings__mdt.object">
+      <PhysicalRelativePath>src\objects\Threat_Tier_Mappings__mdt.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Topic.object">
+      <PhysicalRelativePath>src\objects\Topic.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\TopicAssignment.object">
+      <PhysicalRelativePath>src\objects\TopicAssignment.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\User.object">
+      <PhysicalRelativePath>src\objects\User.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\UserProvisioningRequest.object">
+      <PhysicalRelativePath>src\objects\UserProvisioningRequest.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\Vacation_Package__c.object">
+      <PhysicalRelativePath>src\objects\Vacation_Package__c.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\VAT_Data__mdt.object">
+      <PhysicalRelativePath>src\objects\VAT_Data__mdt.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+    <Object Include="objects\VAT_Rate__mdt.object">
+      <PhysicalRelativePath>src\objects\VAT_Rate__mdt.object</PhysicalRelativePath>
+      <SubType>Object</SubType>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <StaticZip Include="staticresources\SiteSamples">
+      <SubType>StaticResourceZip</SubType>
+    </StaticZip>
+    <StaticZip Include="staticresources\TWS_Sync_Data">
+      <SubType>StaticResourceZip</SubType>
+    </StaticZip>
+  </ItemGroup>
+  <ItemGroup>
+    <StaticZipItem Include="staticresources\SiteSamples\img\clock.png">
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\clock.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\clock.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\img\construction.png">
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\construction.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\construction.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\img\force_logo.png">
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\force_logo.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\force_logo.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\img\maintenance.png">
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\maintenance.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\maintenance.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\img\poweredby.png">
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\poweredby.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\poweredby.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\img\tools.png">
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\tools.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\tools.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\img\unauthorized.png">
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\unauthorized.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\unauthorized.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\img\warning.png">
+      <PhysicalRelativePath>resource-bundles\SiteSamples\img\warning.png</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\img\warning.png</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\SiteSamples\SiteStyles.css">
+      <PhysicalRelativePath>resource-bundles\SiteSamples\SiteStyles.css</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>SiteSamples</StaticResource>
+      <StaticResourcePath>staticresources\SiteSamples\SiteStyles.css</StaticResourcePath>
+    </StaticZipItem>
+    <StaticZipItem Include="staticresources\TWS_Sync_Data\TWS_Sync_Data.twssd">
+      <PhysicalRelativePath>resource-bundles\TWS_Sync_Data\TWS_Sync_Data.twssd</PhysicalRelativePath>
+      <SubType>StaticResourceZipItem</SubType>
+      <StaticResource>TWS_Sync_Data</StaticResource>
+      <StaticResourcePath>staticresources\TWS_Sync_Data\TWS_Sync_Data.twssd</StaticResourcePath>
+    </StaticZipItem>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="classes\AutocreatedRegHandler1520454428839.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\AutocreatedRegHandler1520454428839.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\AutocreatedRegHandler1520454428839.cls</DependentUpon>
+    </None>
+    <None Include="classes\ChangePasswordController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\ChangePasswordController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\ChangePasswordController.cls</DependentUpon>
+    </None>
+    <None Include="classes\ChangePasswordControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\ChangePasswordControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\ChangePasswordControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesLandingController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\CommunitiesLandingController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\CommunitiesLandingController.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesLandingControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\CommunitiesLandingControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\CommunitiesLandingControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesLoginController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\CommunitiesLoginController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\CommunitiesLoginController.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesLoginControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\CommunitiesLoginControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\CommunitiesLoginControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesSelfRegConfirmController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegConfirmController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\CommunitiesSelfRegConfirmController.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesSelfRegConfirmControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegConfirmControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\CommunitiesSelfRegConfirmControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesSelfRegController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\CommunitiesSelfRegController.cls</DependentUpon>
+    </None>
+    <None Include="classes\CommunitiesSelfRegControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\CommunitiesSelfRegControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\CommunitiesSelfRegControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\DeploymentTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\DeploymentTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\DeploymentTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\DeployMetadata.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\DeployMetadata.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\DeployMetadata.cls</DependentUpon>
+    </None>
+    <None Include="classes\ForgotPasswordController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\ForgotPasswordController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\ForgotPasswordController.cls</DependentUpon>
+    </None>
+    <None Include="classes\ForgotPasswordControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\ForgotPasswordControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\ForgotPasswordControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\LightningForgotPasswordController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\LightningForgotPasswordController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\LightningForgotPasswordController.cls</DependentUpon>
+    </None>
+    <None Include="classes\LightningForgotPasswordControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\LightningForgotPasswordControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\LightningForgotPasswordControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\LightningLoginFormController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\LightningLoginFormController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\LightningLoginFormController.cls</DependentUpon>
+    </None>
+    <None Include="classes\LightningLoginFormControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\LightningLoginFormControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\LightningLoginFormControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\LightningSelfRegisterController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\LightningSelfRegisterController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\LightningSelfRegisterController.cls</DependentUpon>
+    </None>
+    <None Include="classes\LightningSelfRegisterControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\LightningSelfRegisterControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\LightningSelfRegisterControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\MetadataExample.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\MetadataExample.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\MetadataExample.cls</DependentUpon>
+    </None>
+    <None Include="classes\Module3RegistrationHandler.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\Module3RegistrationHandler.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\Module3RegistrationHandler.cls</DependentUpon>
+    </None>
+    <None Include="classes\MyDeploymentCallbackTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\MyDeploymentCallbackTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\MyDeploymentCallbackTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\MyProfilePageController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\MyProfilePageController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\MyProfilePageController.cls</DependentUpon>
+    </None>
+    <None Include="classes\MyProfilePageControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\MyProfilePageControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\MyProfilePageControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\PostInstallCallback.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\PostInstallCallback.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\PostInstallCallback.cls</DependentUpon>
+    </None>
+    <None Include="classes\PostInstallScript.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\PostInstallScript.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\PostInstallScript.cls</DependentUpon>
+    </None>
+    <None Include="classes\salesAggregate.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\salesAggregate.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\salesAggregate.cls</DependentUpon>
+    </None>
+    <None Include="classes\SampleSamlJITHandler.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SampleSamlJITHandler.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\SampleSamlJITHandler.cls</DependentUpon>
+    </None>
+    <None Include="classes\SimpleFacebookRegistrationHandler.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SimpleFacebookRegistrationHandler.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\SimpleFacebookRegistrationHandler.cls</DependentUpon>
+    </None>
+    <None Include="classes\SiteLoginController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SiteLoginController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\SiteLoginController.cls</DependentUpon>
+    </None>
+    <None Include="classes\SiteLoginControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SiteLoginControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\SiteLoginControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\SiteRegisterController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SiteRegisterController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\SiteRegisterController.cls</DependentUpon>
+    </None>
+    <None Include="classes\SiteRegisterControllerTest.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\SiteRegisterControllerTest.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\SiteRegisterControllerTest.cls</DependentUpon>
+    </None>
+    <None Include="classes\UpdateContactPageLayout.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\UpdateContactPageLayout.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\UpdateContactPageLayout.cls</DependentUpon>
+    </None>
+    <None Include="classes\UpdatePageLayout.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\UpdatePageLayout.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\UpdatePageLayout.cls</DependentUpon>
+    </None>
+    <None Include="classes\VATController.cls-meta.xml">
+      <PhysicalRelativePath>src\classes\VATController.cls-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>classes\VATController.cls</DependentUpon>
+    </None>
+    <None Include="components\SiteFooter.component-meta.xml">
+      <PhysicalRelativePath>src\components\SiteFooter.component-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>components\SiteFooter.component</DependentUpon>
+    </None>
+    <None Include="components\SiteHeader.component-meta.xml">
+      <PhysicalRelativePath>src\components\SiteHeader.component-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>components\SiteHeader.component</DependentUpon>
+    </None>
+    <None Include="components\SiteLogin.component-meta.xml">
+      <PhysicalRelativePath>src\components\SiteLogin.component-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>components\SiteLogin.component</DependentUpon>
+    </None>
+    <None Include="components\SitePoweredBy.component-meta.xml">
+      <PhysicalRelativePath>src\components\SitePoweredBy.component-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>components\SitePoweredBy.component</DependentUpon>
+    </None>
+    <None Include="pages\AnswersHome.page-meta.xml">
+      <PhysicalRelativePath>src\pages\AnswersHome.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\AnswersHome.page</DependentUpon>
+    </None>
+    <None Include="pages\BandwidthExceeded.page-meta.xml">
+      <PhysicalRelativePath>src\pages\BandwidthExceeded.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\BandwidthExceeded.page</DependentUpon>
+    </None>
+    <None Include="pages\ChangePassword.page-meta.xml">
+      <PhysicalRelativePath>src\pages\ChangePassword.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\ChangePassword.page</DependentUpon>
+    </None>
+    <None Include="pages\CommunitiesLanding.page-meta.xml">
+      <PhysicalRelativePath>src\pages\CommunitiesLanding.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\CommunitiesLanding.page</DependentUpon>
+    </None>
+    <None Include="pages\CommunitiesLogin.page-meta.xml">
+      <PhysicalRelativePath>src\pages\CommunitiesLogin.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\CommunitiesLogin.page</DependentUpon>
+    </None>
+    <None Include="pages\CommunitiesSelfReg.page-meta.xml">
+      <PhysicalRelativePath>src\pages\CommunitiesSelfReg.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\CommunitiesSelfReg.page</DependentUpon>
+    </None>
+    <None Include="pages\CommunitiesSelfRegConfirm.page-meta.xml">
+      <PhysicalRelativePath>src\pages\CommunitiesSelfRegConfirm.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\CommunitiesSelfRegConfirm.page</DependentUpon>
+    </None>
+    <None Include="pages\CommunitiesTemplate.page-meta.xml">
+      <PhysicalRelativePath>src\pages\CommunitiesTemplate.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\CommunitiesTemplate.page</DependentUpon>
+    </None>
+    <None Include="pages\Exception.page-meta.xml">
+      <PhysicalRelativePath>src\pages\Exception.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\Exception.page</DependentUpon>
+    </None>
+    <None Include="pages\FileNotFound.page-meta.xml">
+      <PhysicalRelativePath>src\pages\FileNotFound.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\FileNotFound.page</DependentUpon>
+    </None>
+    <None Include="pages\ForgotPassword.page-meta.xml">
+      <PhysicalRelativePath>src\pages\ForgotPassword.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\ForgotPassword.page</DependentUpon>
+    </None>
+    <None Include="pages\ForgotPasswordConfirm.page-meta.xml">
+      <PhysicalRelativePath>src\pages\ForgotPasswordConfirm.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\ForgotPasswordConfirm.page</DependentUpon>
+    </None>
+    <None Include="pages\IdeasHome.page-meta.xml">
+      <PhysicalRelativePath>src\pages\IdeasHome.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\IdeasHome.page</DependentUpon>
+    </None>
+    <None Include="pages\InMaintenance.page-meta.xml">
+      <PhysicalRelativePath>src\pages\InMaintenance.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\InMaintenance.page</DependentUpon>
+    </None>
+    <None Include="pages\MyProfilePage.page-meta.xml">
+      <PhysicalRelativePath>src\pages\MyProfilePage.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\MyProfilePage.page</DependentUpon>
+    </None>
+    <None Include="pages\salesAggregatevfpage.page-meta.xml">
+      <PhysicalRelativePath>src\pages\salesAggregatevfpage.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\salesAggregatevfpage.page</DependentUpon>
+    </None>
+    <None Include="pages\ServiceProviderPage.page-meta.xml">
+      <PhysicalRelativePath>src\pages\ServiceProviderPage.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\ServiceProviderPage.page</DependentUpon>
+    </None>
+    <None Include="pages\SiteLogin.page-meta.xml">
+      <PhysicalRelativePath>src\pages\SiteLogin.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\SiteLogin.page</DependentUpon>
+    </None>
+    <None Include="pages\SiteRegister.page-meta.xml">
+      <PhysicalRelativePath>src\pages\SiteRegister.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\SiteRegister.page</DependentUpon>
+    </None>
+    <None Include="pages\SiteRegisterConfirm.page-meta.xml">
+      <PhysicalRelativePath>src\pages\SiteRegisterConfirm.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\SiteRegisterConfirm.page</DependentUpon>
+    </None>
+    <None Include="pages\SiteTemplate.page-meta.xml">
+      <PhysicalRelativePath>src\pages\SiteTemplate.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\SiteTemplate.page</DependentUpon>
+    </None>
+    <None Include="pages\StdExceptionTemplate.page-meta.xml">
+      <PhysicalRelativePath>src\pages\StdExceptionTemplate.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\StdExceptionTemplate.page</DependentUpon>
+    </None>
+    <None Include="pages\Unauthorized.page-meta.xml">
+      <PhysicalRelativePath>src\pages\Unauthorized.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\Unauthorized.page</DependentUpon>
+    </None>
+    <None Include="pages\UnderConstruction.page-meta.xml">
+      <PhysicalRelativePath>src\pages\UnderConstruction.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\UnderConstruction.page</DependentUpon>
+    </None>
+    <None Include="pages\VATRateForm.page-meta.xml">
+      <PhysicalRelativePath>src\pages\VATRateForm.page-meta.xml</PhysicalRelativePath>
+      <SubType>Metadata</SubType>
+      <PackageName>
+      </PackageName>
+      <DependentUpon>pages\VATRateForm.page</DependentUpon>
+    </None>
+  </ItemGroup>
+</Project>
